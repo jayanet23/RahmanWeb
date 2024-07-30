@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Profile - RahmanWebDev</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="navbar-brand">RahmanWebDev</div>
+        <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+        <ul class="navbar-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li class="dropdown">
+                <a href="#">Services</a>
+                <ul class="dropdown-content">
+                    <li><a href="company.html">Company Profile</a></li>
+                    <li><a href="ecommerce.html">E-commerce</a></li>
+                    <li><a href="elearning.html">E-learning</a></li>
+                </ul>
+            </li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </header>
+    <div class="image-container">
+        <img src="webdevimg.jpg" alt="Company Image">
+    </div>
+    <main class="content">
+        <section class="about">
+            <h1>About Us</h1>
+            <p>Welcome to RahmanWebDev! We are a leading provider of web development services, specializing in creating professional and engaging websites. Our team of experts is dedicated to helping businesses grow through innovative digital solutions.</p>
+        </section>
+        <section class="services">
+            <h2>Our Services</h2>
+            <ul>
+                <li><strong>Website Development:</strong> Custom websites tailored to your needs.</li>
+                <li><strong>E-commerce Solutions:</strong> Build and manage your online store with ease.</li>
+                <li><strong>E-learning Platforms:</strong> Develop interactive and effective learning environments.</li>
+            </ul>
+        </section>
+        <section class="contact">
+            <h2>Contact Us</h2>
+            <p>If you have any questions or would like to discuss your project, please reach out to us:</p>
+            <address>
+                <p>Email: <a href="mailto:info@rahmanwebdev.com">info@rahmanwebdev.com</a></p>
+                <p>Phone: +123 456 7890</p>
+                <p>Address: 123 Digital Street, Tech City, Country</p>
+            </address>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>© 2024 RahmanWebDev. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const navbarList = document.querySelector('.navbar-list');
+            navbarList.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
